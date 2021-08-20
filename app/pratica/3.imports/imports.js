@@ -14,21 +14,21 @@ logTitle('Title')
 /* IMPORTANT: Named Export e Import var,class,function.
 *   From another Javascript File.
 *   Permite importar e exportar multiplos valores com classes ou metodos */
-// log("Utilizando classe Math com seus metodos");
-// log(Math.add(2,2));
-// log(Math.subtract(5,6));
-// log(Math.division(30,5));
-// log(Math.multiply(3,4));
-// log(Math.PI);
+log("Utilizando classe Math com seus metodos");
+log(Math.add(2,2));
+log(Math.subtract(5,6));
+log(Math.division(30,5));
+log(Math.multiply(3,4));
+log(Math.PI);
 
-// log("");
-// log("Utlizando diretamente metodos da classe Math")
-// log(add(5,9));
-// log(division(90,3));
-// log(PI);
+log("");
+log("Utlizando diretamente metodos da classe Math")
+log(add(5,9));
+log(division(90,3));
+log(PI);
 
 /* IMPORTANT: Default Export e Import var,class, function.
 *   Permite importar e exportar uma unica classe, metodo ou variaveis,
 *   em seu escopo. NORMALMENTE utilizdo para importar Classes e Objetos*/
-// const animal = new Animal();
-// log(animal.getClassType());
+const animal = new Animal();
+log(animal.getClassType());

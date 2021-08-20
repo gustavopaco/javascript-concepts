@@ -1,62 +1,62 @@
 
 /* IMPORTANT: Formas melhoradas de usar propriedades de objetos */
-// const pricePropName = "PRICE"
-//
-// const calculator = (name, price) => {
-//     return {
-//         /* Setar uma propriedade do objeto usando lambda porem existe outro modo
-//         * de se fazer a mesma coisa. Se o nome da propriedade do objeto for o
-//         * mesmo que vem do parametro, entao nao eh preciso especificar por exemplo
-//         * name : name */
-//         // marca: name
-//         name,
-//         add: (n1, n2) => {
-//             return n1 + n2;
-//         },
-//         addUpgrade(n1, n2) {
-//             return n1 + n2;
-//         },
-//         [pricePropName.toLowerCase()] : price
-//     }
-// }
-//
-// const calc = calculator("Casio", 19.99);
-// log(calc.name);
-// log(calc.add(5,9));
-// log(calc.addUpgrade(10,40));
-// log(calc.price);
+const pricePropName = "PRICE"
+
+const calculator = (name, price) => {
+    return {
+        /* Setar uma propriedade do objeto usando lambda porem existe outro modo
+        * de se fazer a mesma coisa. Se o nome da propriedade do objeto for o
+        * mesmo que vem do parametro, entao nao eh preciso especificar por exemplo
+        * name : name */
+        // marca: name
+        name,
+        add: (n1, n2) => {
+            return n1 + n2;
+        },
+        addUpgrade(n1, n2) {
+            return n1 + n2;
+        },
+        [pricePropName.toLowerCase()] : price
+    }
+}
+
+const calc = calculator("Casio", 19.99);
+log(calc.name);
+log(calc.add(5,9));
+log(calc.addUpgrade(10,40));
+log(calc.price);
 
 /* IMPORTANT: Desconstrucao de Arrays */
-// const names = ['Anna', 'Mariam', 'Joe', 'Mark', 'Matt'];
-// const anna = names[0];
-// const mariam = names[1];
-// const joe = names[2];
+const names = ['Anna', 'Mariam', 'Joe', 'Mark', 'Matt'];
+const anna = names[0];
+const mariam = names[1];
+const joe = names[2];
 
 /* Exemplos de como descontruir um array */
 
-// const [anna, mariam, joe] = names;
-// log(`${anna} ${mariam} ${joe}`);
+const [anna, mariam, joe] = names;
+log(`${anna} ${mariam} ${joe}`);
 
-// const [anna, , joe] = names;
-// log(`${anna} ${joe}`);
+const [anna, , joe] = names;
+log(`${anna} ${joe}`);
 
-// const [anna, , joe, ...restOfNames] = names;
-// log(`${anna} ${joe} ${restOfNames}`);
+const [anna, , joe, ...restOfNames] = names;
+log(`${anna} ${joe} ${restOfNames}`);
 
 
-// let imprime = "";
-// names.every((valor, index) => {
-//     if (index === 3) {
-//         return false;
-//     }
-//     imprime += `${valor}, `;
-//     return true;
-// })
-//
-// log(imprime);
+let imprime = "";
+names.every((valor, index) => {
+    if (index === 3) {
+        return false;
+    }
+    imprime += `${valor}, `;
+    return true;
+})
+
+log(imprime);
 
 /* IMPORTANT: Desconstrucao de Objetos */
-import {log} from "../../js/logger";
+
 
 const getUser = () => {
     return {
