@@ -46,7 +46,7 @@ module.exports = env => {
       extensions: [".js", ".css", ".scss", ".json"],
       alias: {
         components: path.resolve(__dirname, "app", "js", "components"),
-        logger$: path.resolve(__dirname, "app", "js", "logger", "index.js"),
+        logger$: path.resolve(__dirname, "app", "js", "logger", "fundamentos.js"),
         styles: path.resolve(__dirname, "app", "styles")
       }
     },
